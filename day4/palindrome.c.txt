@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int a,b=0,c,d;
+    printf("enter the number:");
+    scanf("%d",&a);
+     d=a;  
+    while(a!=0)
+    {
+        c=a%10;
+        b=b*10+c;
+        a/=10;
+        
+   }
+   if(d==b)
+   {
+    printf("it is palaindrome: %d\n\t",d);
+   
+}
+else
+{
+    printf("it is not a palindrone:%d\n\t",b);
+}
+
+return 0;
+}
