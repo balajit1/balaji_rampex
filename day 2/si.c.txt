@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int amount;
+    float interest;
+    int year;
+    float simple_int;
+    printf("enter the annual amount:");
+    scanf("%d",&amount);
+    printf("enter teh interest:");
+    scanf("%f",&interest);
+    printf("enter the year:");
+    scanf("%d",&year);
+
+    simple_int=amount*interest*year/100;
+    printf("simple interest : %2.f",simple_int);
+    return 0;
+}
