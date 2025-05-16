@@ -1,0 +1,31 @@
+ #include <stdio.h>
+ #include <ctype.h>
+
+void main() {
+  char n;
+  printf("\nenter the word:");
+  scanf("%c",&n);
+ 
+if (n=='A'|| n=='E'||n=='I'||n=='O'||n=='U') 
+{
+    printf("\nit is uppercase vowels");
+    
+}
+else if (n=='a'|| n=='e'||n=='i'||n=='o'||n=='u') 
+{
+      printf("\nit is lowercase vowels");
+}
+else if(isalpha(n))
+{
+   printf("\nit is consonents"); 
+}
+
+else if(isdigit(n))
+{
+   printf("\nit is digits"); 
+}
+  else
+  {
+      printf("special symbols");
+  }
+}

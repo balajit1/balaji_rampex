@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+  int n;
+  printf("enter the temperature:");
+  scanf("%d",&n);
+if(n<10)
+{
+    printf("\n jacket ");
+    
+}
+else if(n>=10 && n<20)
+{
+     printf("\nsweater");
+}
+else if(n>=20)
+{
+     printf("\nt-shirt");
+}
+
+ else  
+ {
+     printf("\ninvaild temperture");
+ }
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char name[50];
+    int n;
+    printf("\nenter your name :");
+    scanf("%s",&name);
+    printf("\nenter the password");
+    scanf("%d",&n);
+    if(name=="balaji"&& n==123)
+{
+    printf("\nyou have successfully logined BALAJI");
+}    
+ else if(strcmp(name,"manoj")==0 && n==124)
+{
+    printf("\nyou have successfully logined MANOJ");
+}     
+else if(strcmp(name,"sunil")==0 && n==812)
+{
+    printf("\nyou have successfully logined SUNIL");
+}   
+else if(strcmp(name,"marzook")==0 && n==999)
+{
+    printf("\nyou have successfully logined marzook");
+} 
+else
+{
+    printf("invalid username or password");
+}
+
+    return 0;
+}

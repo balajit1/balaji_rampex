@@ -1,0 +1,21 @@
+ #include <stdio.h>
+
+void main() {
+  char n;
+  printf("\nenter the word:");
+  scanf("%c",&n);
+if (n >= 'A' && n <= 'Z') 
+{
+    printf("\nit is uppercase");
+    
+}
+else if (n >= 'a' && n <= 'z') 
+{
+      printf("\nit is lowercase");
+}
+else
+{
+   printf("\nit is non alphabetic"); 
+}
+  
+}
