@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+int a,b,c;
+
+printf("enter the number:");
+scanf("%d",&a);
+printf("enter the number:");
+scanf("%d",&b);
+printf("\nADDITION:");
+c=a+b;
+printf("\nADDITION is %d:",c);
+printf("\nSUBRACTION:");
+c=a-b;
+printf("\nSUBRACTION is %d:",c);
+printf("\nMULTIPLICATION:");
+c=a*b;
+printf("\nMULTIPLICATION is %d:",c);
+printf("\nDIVISION:");
+c=a/b;
+printf("\nDIVISION is %d:",c);
+
+
+return 0;
+}
