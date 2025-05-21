@@ -1,0 +1,32 @@
+#include <stdio.h>
+long int count(long int num)
+{
+   long int n=0;
+    if(num<0)
+    {
+        return 1;
+    }
+    if( num==0)
+    {
+        num=-num;
+    }
+    while(num!=0)
+    {
+        num/=10;
+        n++;
+    }
+    
+return n;
+}
+int main()
+{
+    long int n,num;
+    printf("enter the number:");
+    scanf("%ld",&num);
+    long int digits=count(num);
+    printf("sum the number of digits in a number :%ld",digits);
+  
+
+
+    return 0;
+}
