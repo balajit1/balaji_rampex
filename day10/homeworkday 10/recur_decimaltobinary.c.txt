@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+
+void printBinaryRecursive(int n, int a) {
+    if (a == 0)
+        return;
+
+    
+    int bit = (n >> (a- 1)) & 1;
+    printf("%d", bit);
+
+   
+    printBinaryRecursive(n, a - 1);
+}
+
+int main() {
+    int n;
+
+    printf("Enter a decimal number (0 to 15): ");
+    scanf("%d", &n);
+
+    if (n < 0 || n > 15) {
+        printf("invalid number enter a number between 0 and 15.\n");
+    } else {
+        printf("4-bit binary: ");
+        printBinaryRecursive(n, 4); 
+        printf("\n");
+    }
+
+    return 0;
+}
