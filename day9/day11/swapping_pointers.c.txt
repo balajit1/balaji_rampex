@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    printf("enter  the number i:");
+    scanf("%p",&a);
+     printf("enter  the number 2:");
+    scanf("%p",&b);
+    int *x=&a;
+    int *y=&b;
+    c=*x;
+    *x=*y;
+    *y=c;
+  printf("swapping of values: a=%d,b=%d",a,b);
+    return 0;
+}

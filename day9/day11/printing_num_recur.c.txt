@@ -1,0 +1,15 @@
+#include<stdio.h>
+int num(int a)
+{
+if(a==0)
+return a;
+printf("%d\n",a);
+    return num(a-1);
+}
+
+int main()
+{
+    int a;
+    printf("%d",num(12));
+     return 0;
+}
